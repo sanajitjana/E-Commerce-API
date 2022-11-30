@@ -35,19 +35,19 @@ My project performs fundamental operations of an e-commerce website, where our c
 
 1. clone our Project into your local machine.
       - open any terminal
-      - git clone https://github.com/sanajitjana/star-theory-7179.git
+      - git clone `https://github.com/sanajitjana/E-Commerce-API.git`
 2. Open Your STS
 3. Goto File -> Import -> Select Maven -> Choose Existing Maven -> Click on browse -> Choose the project location -> Select the project -> Finish
 4. All done, good to go!
 
-* Before running the API server, you should update the database config inside the [application.properties](https://github.com/sanajitjana/star-theory-7179/blob/master/FoodyExpress/src/main/resources/application.properties) file. 
+* Before running the API server, you should update the database config inside the [application.properties](https://github.com/sanajitjana/E-Commerce-API/blob/master/src/main/resources/application.properties) file. 
 * Update the port number, username and password as per your local database config.
 
 ```
     #db specific properties
-    server.port=8088
+    server.port=8888
     
-    spring.datasource.url=jdbc:mysql://localhost:3306/foody_express_db;
+    spring.datasource.url=jdbc:mysql://localhost:3306/online_shopping_db;
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.datasource.username="Your SQL username"
     spring.datasource.password="Your SQL Password"
