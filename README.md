@@ -42,6 +42,7 @@ My project performs fundamental operations of an e-commerce website, where our c
 
 * Before running the API server, you should update the database config inside the [application.properties](https://github.com/sanajitjana/E-Commerce-API/blob/master/src/main/resources/application.properties) file. 
 * Update the port number, username and password as per your local database config.
+* Run your application and hit this url on browser - `http://localhost:8888/swagger-ui/`
 
 ```
     #db specific properties
