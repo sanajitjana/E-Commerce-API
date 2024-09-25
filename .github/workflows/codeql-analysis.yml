@@ -16,14 +16,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up CodeQL
-        uses: github/codeql-action/setup@v2.1.2  # Use a specific version that is known to work
+        uses: github/codeql-action/setup@a6c67f2  # Specific commit SHA
         with:
           languages: 'java'
 
       - name: Auto-detect CodeQL configuration
-        uses: github/codeql-action/autodetect@v2
+        uses: github/codeql-action/autodetect@a6c67f2  # Specific commit SHA
 
       - name: Run CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: github/codeql-action/analyze@a6c67f2  # Specific commit SHA
         with:
           category: 'security'
