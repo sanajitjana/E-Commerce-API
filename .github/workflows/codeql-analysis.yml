@@ -16,14 +16,14 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up CodeQL
-        uses: github/codeql-action/setup@v2
+        uses: https://github.com/github/codeql-action/raw/main/setup/action.yml
         with:
-          languages: 'java' # Specify the languages you want to analyze
+          languages: 'java'
 
-      - name: Auto-detect CodeQL configuration
-        uses: github/codeql-action/autodetect@v2
+      - name: Initialize CodeQL database
+        uses: https://github.com/github/codeql-action/raw/main/autodetect/action.yml
 
       - name: Run CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: https://github.com/github/codeql-action/raw/main/analyze/action.yml
         with:
           category: 'security'
