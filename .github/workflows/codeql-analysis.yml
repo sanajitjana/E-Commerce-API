@@ -13,17 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up CodeQL
-        uses: github/codeql-action/setup@a6c67f2  # Specific commit SHA
+        uses: github/codeql-action/setup@v2
         with:
-          languages: 'java'
+          languages: 'java' # Specify the languages you want to analyze
 
       - name: Auto-detect CodeQL configuration
-        uses: github/codeql-action/autodetect@a6c67f2  # Specific commit SHA
+        uses: github/codeql-action/autodetect@v2
 
       - name: Run CodeQL Analysis
-        uses: github/codeql-action/analyze@a6c67f2  # Specific commit SHA
+        uses: github/codeql-action/analyze@v2
         with:
           category: 'security'
